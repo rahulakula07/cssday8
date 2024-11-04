@@ -1,0 +1,36 @@
+ul{
+    text-decoration: none;
+}
+
+[data-available="true"]{
+    background-color: green;
+}
+[data-available="false"]{
+    background-color: red;
+}
+[data-price="high"]{
+    font-weight: bold;
+}
+ul{
+    background-color: lightcyan;
+    padding: 10px;
+}
+li{
+    padding: 10px;
+}
+ul li[data-category="Electronics"]{
+    list-style-type: upper-alpha;
+}
+ul li[data-category="Appliances"]{
+    list-style-type: upper-alpha;
+}
+/*by using pseudo class we can second line in the code*/
+ul li:nth-child(2){  
+    list-style-type: number;
+}
+ul li:nth-child(4){
+    list-style-type: number;
+}
+ul li:nth-child(5){
+    list-style-type: number;
+}
